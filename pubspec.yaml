@@ -40,6 +40,10 @@ dependencies:
   file_picker: ^9.2.0
   google_fonts: ^6.2.1
   animate_do: ^4.2.0
+  share_plus: ^10.1.4
+  flutter_launcher_icons: ^0.14.3
+  fluttertoast: ^8.2.12
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +67,15 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/software.png"  # Path to your logo
+  adaptive_icon_foreground: "assets/icon/software.png"  # Optional for Android
+  adaptive_icon_background: "assets/icon/software.png"  # Optional for Android
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

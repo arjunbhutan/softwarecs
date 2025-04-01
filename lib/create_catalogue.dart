@@ -12,7 +12,9 @@ class CreateCatalogueScreen extends StatefulWidget {
   State<CreateCatalogueScreen> createState() => _CreateCatalogueScreenState();
 }
 
+
 class _CreateCatalogueScreenState extends State<CreateCatalogueScreen> {
+
   final TextEditingController _codeController = TextEditingController();
   final TextEditingController _descriptionController = TextEditingController();
   final TextEditingController _namenController = TextEditingController();
@@ -31,6 +33,8 @@ class _CreateCatalogueScreenState extends State<CreateCatalogueScreen> {
 
   @override
   void initState() {
+    print("Received email: ${widget.email}");
+
     super.initState();
     _databaseRef = FirebaseDatabase.instance
         .ref()
